@@ -1,0 +1,22 @@
+<h1>Cookbook</h1>
+<ul class="menu">
+  <li><a href="/">Home</a></li>
+  <li><a href="/new">New</a></li>
+</ul>
+
+
+<h2>Your Recipes</h2>
+
+<% @recipes.each_with_index do |recipe, index| %>
+  <li>
+    <div>
+      <%="#{recipe.name} | #{recipe.prep_time} min | #{recipe.difficulty}" %><br />
+      <%= "#{recipe.description}" %>
+      <form action="/delete_recipe" method="post">
+        <input class="button" type="submit" value="Delete" index=index/>
+      </form>
+    </div>
+  </li>
+<% end %>
+<br />
+<a href="/new">Create a new recipe</a>

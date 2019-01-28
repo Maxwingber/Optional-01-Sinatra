@@ -1,0 +1,19 @@
+
+
+h1 {font-family: 'Open Sans', sans-serif;}
+h2 {font-family: 'Open Sans', sans-serif;}
+
+li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.menu {
+  display: block;
+}
+
+.button {
+  border-radius: 6px;
+  font-size: 70%;
+}
+ .button:hover {
+ }
